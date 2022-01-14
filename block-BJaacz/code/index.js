@@ -3,28 +3,50 @@
 /*
   Create a function named addTwo which accepts a number, adds 2 to the number and return the new value.
 */
+function addTwo(num2){
+  return num2 + 2 ;
+}
 
 /*
   Create a function named addThree which accepts a number, adds 3 to the number and return the new value.
 */
-
+function addThree(num3){
+  return num3 + 3 ;
+}
 /*
   Create a function named addFive which accepts a number, adds 5 to the number and return the new value.
 */
-
+function addFive(num5){
+  return num5 + 5 ;
+}
 /*
   Create a function named addTwoToArray which accepts:
     - An array of numbers
     - Returns a new array where 2 is added to each element
     - While doing so use the funciton addTwo
 */
-
+function addTwoToArray(array2){
+  let addedTwoArray = [];
+  for(let number of array2) {
+    let numTwo = addTwo(number);
+    addedTwoArray.push(numTwo);
+  }
+  console.log(addedTwoArray);
+}
 /*
   Create a function named addThreeToArray which accepts:
     - an array of numbers
     - aeturns a new array where 2 is added to each element
     - while doing so use the funciton addThree
 */
+function addThreeToArray(array3){
+  let addedThreeArray = [];
+  for(let number of array3) {
+    let numThree = addThree(number);
+    addedThreeArray.push(numThree);
+  }
+  console.log(addedThreeArray);
+}
 
 /*
   Create a function named addFiveToArray which accepts:
@@ -32,7 +54,14 @@
     - aeturns a new array where 2 is added to each element
     - while doing so use the funciton addThree
 */
-
+function addFiveToArray(array5){
+  let addedFiveArray = [];
+  for(let number of array5) {
+    let numFive = addFive(number);
+    addedFiveArray.push(numFive);
+  }
+  console.log(addedFiveArray);
+}
 /*
 In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeating the code, let's fix this.
 
@@ -48,6 +77,17 @@ In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeatin
     console.log(changeArray([1, 2, 3, 4, 5, 6], addThree)); // [4, 5, 6, 7, 8, 9]
     console.log(changeArray([1, 2, 3, 4, 5, 6], addFive)); // [6, 7, 8, 9, 10, 11]
 */
+function changeArray(array, cb) {
+  let changedArray = [];
+  for(let numb of array){
+    if(cb(numb)){
+      changedArray.push(numb);
+    }
+  }
+  return changedArray;
+}
+
+console.log(changeArray([1, 2, 3, 4, 5, 6], addTwo)); // [3, 4, 5, 6, 7, 8]
 
 /*
   Create a function called sendMessage that accepts two arguments:
@@ -319,3 +359,7 @@ filter is a higher order function.
     console.log(multiplyByFive(20)); // 180
     console.log(multiplyByFive(5)); // 45
 */
+
+
+
+
