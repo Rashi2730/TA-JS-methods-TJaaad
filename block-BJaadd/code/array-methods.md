@@ -34,23 +34,128 @@ Example:
    - No it does not mutate the original array
 
 2. `join`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 3. `flat`
-4. `push`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
+4. `push` 
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 5. `indexOf`
-6. `lastIndexOf`
-7. `includes`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
+6. `lastIndexOf` 
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
+7. `includes` 
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 8. `reverse`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 9. `every`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 10. `shift`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 11. `splice`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 12. `find`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 13. `unshift`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 14. `findIndex`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 15. `filter`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 16. `flat`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 17. `forEach`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 18. `map`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 19. `pop`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 20. `reduce`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 21. `slice`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
 22. `some`
+- Parameter - 
+- Return - 
+- Example - 
+- Description - 
+
