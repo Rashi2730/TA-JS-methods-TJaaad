@@ -10,10 +10,22 @@ let words = [
 ];
 
 // - Write a function findLongestWord that takes an array of words and returns the longest word from the array. (Use above array "words" to test it). If there are 2 with the same length, it should return the first occurrence.
-
+function findLongestWord(array){
+  let longeestWord = array.sort((a,b) => a.length - b.length).pop();
+  return longeestWord;
+  if(a === b){
+    return a;
+  }
+}
 // - Convert the above array "words" into an array of length of word instead of word.
-
+let wordsLength = [];
+for(let word of words){
+  wordsLength.push(word.length);
+}
+console.log(wordsLength);
 // - Create a new array that only contains word with atleast one vowel.
+let vowelArray = [];
+
 
 // - Find the index of the word "rhythm"
 
