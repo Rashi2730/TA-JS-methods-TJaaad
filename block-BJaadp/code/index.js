@@ -113,7 +113,7 @@ const dataTwo = [
 
 // Using reduce flat dataTwo array
 let dataTwoFlat = dataTwo.reduce((acc, cv) => {
-  return acc.concat(cv);
+  return acc.concat(cv.flat(Infinity));
 }, []);
 console.log(dataTwoFlat); 
 
@@ -145,7 +145,7 @@ function triple(value){
 }
 
 function half(value) {
-  return Math.pow(value / 2);
+  return Math.round(value / 2);
 }
 
 let pipeline = [
@@ -172,6 +172,12 @@ EXAMPLE:
 
   ...
 */
+pipeline.reduce((acc, cv) => {
+  acc  =  cv(acc);
+  return acc;
+}, 3);
+
+
 
 let pipeline2 = [
   increment,
@@ -188,3 +194,8 @@ let pipeline2 = [
 ];
 
 // Find the output using pipeline2 the initial value if 8
+
+pipeline2.reduce((acc, cv) => {
+  acc = cv(acc);
+  return acc;
+}, 8);
