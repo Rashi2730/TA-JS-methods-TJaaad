@@ -10,7 +10,7 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
-![](./img/main.png)
+![](./)
 
 
 ```js
@@ -19,6 +19,7 @@ function double(num) {
   return num * 2;
 }
 let doubleNum = numbers.forEach(double);
+![](./block-BJaadk\code\Untitled-2022-01-18-0754.png)
 ```
 
 ```js
