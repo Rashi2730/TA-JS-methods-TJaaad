@@ -7,7 +7,7 @@ function countAllPeople() {
 function peopleByHouses() {
   // your code goes here
 }
-
+chchcmnkjkvbm 
 function everyone() {
   // your code goes here
 }
