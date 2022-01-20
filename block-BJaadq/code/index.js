@@ -2,35 +2,73 @@
 
 function countAllPeople() {
   // your code goes here
+  let totalPeep = 0;
+  got.houses.forEach((house) => {
+    totalPeep = totalPeep +  house.people.length;
+  });
+  return totalPeep;
 }
 
 function peopleByHouses() {
   // your code goes here
+let housePeople = [];
+got.houses.forEach((house) => {
+  housePeople[house.name] = house.people.length
+});
+return housePeople;
 }
-chchcmnkjkvbm 
+ 
 function everyone() {
   // your code goes here
+  let allPeople = [];
+  got.houses.forEach((house) => {
+    let peopleName = house.people.map((person) => person.name);
+    allPeople = allPeople.concat(peopleName);
+  })
+ return allPeople;
 }
 
 function nameWithS() {
   // your code goes here
-}
+  let allnames = everyone();
+  return allnames.filter((names) => 
+    names.toLowerCase().includes("s")
+  );
+  }
+
 
 function nameWithA() {
   // your code goes here
+  let allnames = everyone();
+  return allnames.filter((names) => 
+    names.toLowerCase().includes("a")
+  );
 }
 
 function surnameWithS() {
   // your code goes here
+  let allnames = everyone();
+  return allnames.filter((names) => 
+    names.split(" ")[1].toLowerCase().includes("s")
+  );
 }
 
 function surnameWithA() {
   // your code goes here
+  let allnames = everyone();
+  return allnames.filter((names) => 
+    names.split(" ")[1].toLowerCase().includes("a")
+  );
 }
 
 function peopleNameOfAllHouses() {
   // your code goes here
-}
+  let obj ={};
+  got.houses.forEach((house) => {
+    obj[house.name]  = house.people.map((p) => p.name);
+  })
+  }
+
 
 // Testing your result after writing your function
 console.log(countAllPeople());
@@ -63,3 +101,7 @@ console.log(surnameWithA());
 console.log(peopleNameOfAllHouses());
 // Output should be
 // {Arryns: ["Jon Arryn"], Baratheons: ["Robert Baratheon", "Stannis Baratheon", "Renly Baratheon", "Joffrey Baratheon", "Tommen Baratheon", "Myrcella Baratheon"], Dothrakis: ["Khal Drogo"], Freys: ["Walder Frey"], Greyjoys: ["Balon Greyjoy", "Theon Greyjoy", "Yara Greyjoy"], Lannisters: ["Tywin Lannister", "Tyrion Lannister", "Jaime Lannister", "Cersei Baratheon"], Redwyne: ["Olenna Tyrell"], Starks: ["Eddard Stark", "Benjen Stark", "Robb Stark", "Sansa Stark", "Arya Stark", "Brandon Stark", "Rickon Stark", "Jon Snow"], Targaryens: ["Daenerys Targaryen", "Viserys Targaryen"], Tullys: ["Catelyn Stark", "Lysa Arryn", "Edmure Tully", "Brynden Tully"], Tyrells: ["Margaery Baratheon", "Loras Tyrell"]}
+
+
+
+
