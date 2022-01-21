@@ -2,35 +2,68 @@
 
 function countAllPeople() {
   // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc = acc + cv.people.length;
+    return acc;
+  }, 0);
 }
 
 function peopleByHouses() {
   // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc[cv.name] =  cv.people.length;
+    return acc;
+  }, {});
 }
 
 function everyone() {
   // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc =   acc.concat(cv.people.map((n) => n.name));
+    return acc;
+  }, []);
 }
-jchvnkbk
+
 
 function nameWithS() {
   // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc =   acc.concat(cv.people.map((n) => n.name).filter((names) => names.toLowerCase().includes(`s`) ));
+    return acc;
+  }, []);
 }
 
 function nameWithA() {
   // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc =   acc.concat(cv.people.map((n) => n.name).filter((names) => names.toLowerCase().includes(`a`) ));
+    return acc;
+  }, []);
 }
 
 function surnameWithS() {
   // your code goes here
+    // your code goes here
+    return got.houses.reduce((acc,cv) => {
+      acc =   acc.concat(cv.people.map((n) => n.name).filter((names) => names.split(" ")[1].toLowerCase().includes(`s`) ));
+      return acc;
+    }, []);  
 }
 
 function surnameWithA() {
   // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc =   acc.concat(cv.people.map((n) => n.name).filter((names) => names.split(" ")[1].toLowerCase().includes(`a`) ));
+    return acc;
+  }, []);  
 }
 
 function peopleNameOfAllHouses() {
   // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc[cv.name] =  cv.people.map((p) => p.name);
+    return acc;
+  }, {});
 }
 
 // Testing your result after writing your function
